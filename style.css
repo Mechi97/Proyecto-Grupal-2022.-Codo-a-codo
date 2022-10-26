@@ -1,5 +1,73 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;}
+Maxint89-patch-4
+
+
+body {
+    margin: 0;
+}
+
+h1{font-size:3.5em ;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    overflow:hidden;
+    background: #252932;
+    margin-bottom: 20px;
+}
+
+header .logo{
+    float: left;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    float: right;
+    line-height: 200px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
     margin: 0 0 10 20px;
     padding: 0;
     text-align: center
@@ -52,12 +120,91 @@ header nav{
     text-align: center;
     padding-bottom: 25px;
 }
+main
 header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
+Maxint89-patch-4
+
+header a:hover{
+    background: #f56f3a;
+    border-radius: 50px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column ;
+    height: 99vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("/Sitio\ Patitas/media/mascotas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#noticias{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#noticias .container{
+    padding: 150px 12px;
+}
+
+#noticias p{
+    display: none;
+}
+
+#noticias .notas{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.notas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Sitio\ Patitas/media/img2.jpg");   
+}
+
+.notas:nth-child(2){
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Sitio\ Patitas/media/img1.jpg");
+}
+
+.notas:nth-child(3){
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Sitio\ Patitas/media/img3.jpg");
+}
+
+
 header a:hover{
     color: rgb(60, 142, 219);
 }
@@ -192,3 +339,4 @@ h4{
 
 
 
+ main
