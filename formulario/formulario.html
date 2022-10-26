@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang= "en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas</title>
+    <link rel="stylesheet" href="formulario.css">
+    <!-- TIPOGRAFIAS -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<!-- ANIMACIONES CSS -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
-    <h1>Formulario</h1>
+
+
+    <header>
+      <div class="header conteiner">
+
+        <div class="logo"> <a id="logo" href="inicio.html"><img src="../imagenes/logo.png" width="100px" alt=""></a></div>
+        
+        <div class="titulo"><h1>Patitas</h1></div>
+
+         <div class="nav bar">
+         
+            <nav>
+               <ul>
+                  <li><a href="index.html">Inicio</a></li>
+	               <li><a href="quienesSomos.html">Quienes Somos</a></li>
+	               <li><a href="nuestrosAnimalitos.html">Nuestros Animalitos</a></li>
+      	         <li><a href="formulariodeAdopcion.html">Contacto</a></li>
+      	      </ul>
+            </nav>
+         </div>
+      </div>
+    </header>
+
+
+    <body>
+
+<div class="conteiner">
+   <div class="banner"> <img src="../imagenes/banner formulario.jpg" alt=""> </div>
+    
+   <h1 class="animate__animated animate__bounceInUp">Formulario</h1>
+   
+   <div class="formulario de contacto">
+
+         <form action="">
+     <p>
+        <label for="firstname">Nombre</label>
+        <input type="text" placeholder="Por ejemplo: Juan">
+     </p>
+     <p>
+        <label for="lastname">Apellido</label>
+        <input type="text" name="apellido" size="15" placeholder="Por ej: Perez" onclick="if(this.placeholder=='Apellido') this.placeholder=''" onblur="if(this.placeholder=='') this.vplaceholder='Por ej: Perez'" />
+        
+     </p>
+     <p>
+        <label for="dni"placeholder= >Número de DNI</label>
+        <input type="number">
+     </p>
+     <p>
+        <label for="mail">Dirección de correo electronico</label>
+        <input type="email" name= "email" placeholder= "Por ejemplo:juanperez@hotmail.com">
+     </p>
+     <p>
+        <label for= "pet"> Nombre/s de la/s Mascota/s</label><br>
+        <input type="text">
+     </p>
+     <p class="block">
+        <label for="safe"> Contás con un espacio seguro?
+        <input type="radio" id="seguro" name="seguro" value="safe">
+        <label for="safe">Sí</label>
+        <input type="radio" id="seguro" name="seguro" value="safe">
+        <label for="safe">No</label> 
+     </p>
+     <p class="block"> 
+        <label for="castracion">Aceptás castrarlo y vacunarlo?</label>
+        <input type="radio" id="vacunas" name="vacunas" value="safe">
+        <label for="safe">Sí</label>
+        <input type="radio" id="vacunas" name="vacunas" value="safe">
+        <label for="safe">No</label>
+     </p>
+     <p class="block">
+        <label>Comentarios</label> 
+        <textarea name="message" id="" cols="30" rows="3"></textarea>
+     </p>
+     <p class="block">
+     <button type="submit">Enviar Formulario</button>
+     </p>
+        
+     </form>
+
+ </div>
+</div>
+    
 </body>
-</html>
+</html>  
