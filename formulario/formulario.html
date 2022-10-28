@@ -13,6 +13,7 @@
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 
 
@@ -41,39 +42,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <body>
 
 <div class="conteiner">
-   <div class="banner"> <img src="../imagenes/banner formulario.jpg" alt=""> </div>
+   <div class="banner"> <img src="../imagenes/banner.jpg" alt=""> </div>
     
    <h1 class="animate__animated animate__bounceInUp">Formulario</h1>
    
    <div class="formulario de contacto">
 
-         <form action="">
+      <form action="https://formspree.io/f/xkneqkeo"method="POST" class="formulario de contacto" id="formulario">
      <p>
         <label for="firstname">Nombre</label>
-        <input type="text" placeholder="Por ejemplo: Juan">
+        <input type="text" placeholder="Por ejemplo: Juan" required name="nombre" id="nombre">
      </p>
      <p>
         <label for="lastname">Apellido</label>
-        <input type="text" name="apellido" size="15" placeholder="Por ej: Perez" onclick="if(this.placeholder=='Apellido') this.placeholder=''" onblur="if(this.placeholder=='') this.vplaceholder='Por ej: Perez'" />
+        <input type="text" name="apellido" size="15" placeholder="Por ej: Perez" required name="apellido" id="apellido" onclick="if(this.placeholder=='Apellido') this.placeholder=''" onblur="if(this.placeholder=='') this.vplaceholder='Por ej: Perez'" />
         
      </p>
      <p>
         <label for="dni"placeholder= >Número de DNI</label>
-        <input type="number">
+        <input type="number" required pattern="[0-9]{8}" name="dni" id="dni">
      </p>
      <p>
-        <label for="mail">Dirección de correo electronico</label>
-        <input type="email" name= "email" placeholder= "Por ejemplo:juanperez@hotmail.com">
+        <label for="mail">Dirección de correo electronico</label> 
+        <input type="email" name= "mail" id="mail" placeholder= "Por ejemplo:juanperez@hotmail.com" required pattern="@">
      </p>
      <p>
         <label for= "pet"> Nombre/s de la/s Mascota/s</label><br>
-        <input type="text">
+        <input type="text" name="mascota" id="mascota" required>
      </p>
      <p class="block">
         <label for="safe"> Contás con un espacio seguro?
-        <input type="radio" id="seguro" name="seguro" value="safe">
+        <input type="radio" id="seguro" name="seguro"  value="safe" required>
         <label for="safe">Sí</label>
-        <input type="radio" id="seguro" name="seguro" value="safe">
+        <input type="radio" id="seguro" name="seguro" value="safe" required>
         <label for="safe">No</label> 
      </p>
      <p class="block"> 
@@ -92,9 +93,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
      </p>
         
      </form>
+     
 
  </div>
 </div>
-    
+<script src="app.js"></script>
 </body>
 </html>  

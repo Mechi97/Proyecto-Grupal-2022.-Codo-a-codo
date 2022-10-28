@@ -23,6 +23,7 @@
    }
    
    .header.conteiner{
+    
      width: 100%;
      height: 300px;
      display: flex;
@@ -40,11 +41,13 @@
    }
    
    header nav{
+    
      float: center;
      line-height: 50px;
    }
    
    header nav a{
+  
      display: inline-block;
      color: rgb(72, 92, 142);
      text-decoration: none;
@@ -96,6 +99,7 @@
    }
    
    .titulo h1{
+    min-width: 440px;
      height: 100px;
      background: none;
      color: rgb(95, 111, 148) ;
@@ -149,13 +153,20 @@
    
    .formulario.de.contacto form button{
      color: white;
-     background-color:rgb(37, 49, 109) ;
+     background-color:rgb(95, 111, 148) ;
      padding: px;
      font-weight: 5px;
      font-size: 20px;
      border-bottom: 1px;
      box-shadow: 2px 2px 10px;
      
+   }
+   .formulario.de.contacto form button:hover,
+   .formulario.de.contacto form button:focus{
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(95, 111, 148);
+    transition: background-color 1s ease-out;
+    outline: 0;
    }
    
    .formulario.de.contacto form .block{
@@ -171,3 +182,19 @@
      padding-left: 5px;
    }
    
+   /* Responsive */
+   @media (mind-widht: 768px){
+    body {
+      padding: 0 4rem;
+    }
+
+   }
+   @media (mind-widht: 440px){
+    body {
+      padding: 0 4rem;
+    }
+   }
+   .formulario.de.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
