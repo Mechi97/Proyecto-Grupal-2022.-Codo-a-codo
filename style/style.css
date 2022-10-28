@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0 0 10 20px;
+    padding: 0;
+    text-align: center
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-image:url("asset/imagendefondo.jpg");
+    background-position: center center;
+}
+    
+
+h1{font-size: 4em;}
+h2{font-size: 2em}
+h4{font-size: 1em;}
+p{font-size: 30px;}
+
+h2::first-line{
+    color: azure;
+    font-style: italic;
+}
+
+
+.logo{
+    margin: 0;
+    z-index: 10;
+    padding: 0px 50px;
+    font: weight 10px;;
+    font-size: 40px;
+    background-color: rgba(188, 188, 188, 0.393);
+}
+
+.barra{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.609);
+}
+header nav{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: rgb(60, 142, 219);
+}
+#banner{
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    background-image: url("asset/pexels-izmir-düğün-fotoğrafçısı-3921203.jpg");
+    background-position:center center
+}
+
+#banner h1{
+    color: white;
+}
+#quienes-somos contenedor{ 
+
+}
+
+#quienes-somos{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+.linea{
+    background-color: rgba(106, 106, 255, 0.486);
+    height: 5px;
+    width: 100%;
+    position: center center;
+    display: block;
+}
+#galeria{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+a:hover {
+    filter:brightness(60%);
+    transform:rotate(1deg);
+}
+
+
+h4{
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 px white, 0 0 5px white;
+    text-align: center;
+
+}
+
+#notas{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+    .nota{
+        position: center center;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+        margin: auto;
+        grid-gap: 15px;
+        padding: 0 0px;
+        overflow: hidden;
+    }
+    
+    .nota img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;}
+
+    .box{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.245);
+        transition: transform .3s ease;
+        width: 100%;
+        height: 100vh;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+    }
+    .equis{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: rgb(255, 0, 0) ;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        font-style:unset;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100%;
+    
+    }
+    .box img{
+        width: 40vw;
+        max-height: 95vh;
+    }
+    .box:target{
+        transform: scale(1);
+    }
+
+
+
+#contacto{
+    text-align: center;
+    padding: 200px 12px;
+}
+#ubicacion{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
