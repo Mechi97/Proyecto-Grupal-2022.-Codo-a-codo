@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fundación Patitas</title>
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/mediaqueries.css">
+    <!-- TIPOGRAFIAS -->
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- ANIMACIONES CSS -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <script>
+      window.addEventListener("load", function (event) {
+         console.log("'Todos los recursos terminaron de cargar!");
+         setTimeout(function () {document.getElementById('animation').style.display = 'none'}, 2000);
+      });
+   </script>
+   <script src="scripts/scripts.js"></script>
+</head>
+<body>
+   <header>
+      <div class="header conteiner">
+   
+         <div class="logo"> <a id="logo" href="index.html"><img src="assets/logo.png" width="100px" alt=""></a></div>
+   
+         <div class="titulo">
+            <h1>Fundación Patitas</h1>
+         </div>
+   
+      </div>
+      <div class="topnav" id="myTopnav">
+         <a href="quienessomos.html">Quienes Somos</a>
+         <a href="galeria.html">Nuestros Animalitos</a>
+         <a href="formulario.html">Contacto</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
+
+   <div class="conteiner">
+      <div class="banner"> <img src="assets/banner.jpg" alt=""> </div>
+      
+      <h1 class="animate__animated animate__bounce" id="animation">Formulario</h1>
+      
+      <div class="formulario de contacto">
+
+         <form onsubmit="return validate()" name="myForm" action="#">
+            <p>
+               <label for="firstname">Nombre <span class="obligatorio">*</span></label>
+               <input type="text" name="nombre" id="nombre" placeholder="Por ejemplo: Juan">
+            </p>
+            <p>
+               <label for="lastname">Apellido <span class="obligatorio">*</span></label>
+               <input type="text" name="apellido" id ="apellido" size="15" placeholder="Por ej: Perez" onclick="if(this.placeholder=='Apellido') this.placeholder=''" onblur="if(this.placeholder=='') this.vplaceholder='Por ej: Perez'" />
+               
+            </p>
+            <p>
+               <label for="dni"placeholder= >Número de DNI <span class="obligatorio">*</span></label>
+               <input type="number" name="dni" id="dni" placeholder="11111111">
+            </p>
+            <p>
+               <label for="mail">Dirección de correo electronico <span class="obligatorio">*</span></label>
+               <input type="email" name= "email" id="email" placeholder= "Por ejemplo:juanperez@hotmail.com">
+            </p>
+            <p>
+               <label for= "pet"> Nombre/s de la/s Mascota/s <span class="obligatorio">*</span></label><br>
+               <input type="text" name="mascota" id="mascota">
+            </p>
+            <p class="block">
+               <label for="safe"> Cumplís con los requisitos?(Más información en "Quienes Somos")?
+               <input type="radio" id="seguro" name="seguro" value="safe">
+               <label for="safe">Sí</label>
+               <input type="radio" id="seguro" name="seguro" value="safe">
+               <label for="safe">No</label> 
+            </p>
+            <p class="block"> 
+               <label for="castracion">Aceptás castrarlo y vacunarlo?</label>
+               <input type="radio" id="vacunas" name="vacunas" value="safe">
+               <label for="safe">Sí</label>
+               <input type="radio" id="vacunas" name="vacunas" value="safe">
+               <label for="safe">No</label>
+            </p>
+            <p class="block">
+               <label>Comentarios</label> 
+               <textarea name="message" id="" cols="30" rows="3"></textarea>
+            </p>
+            <p class="block">
+            <button type="submit">Enviar Formulario</button>
+            </p>
+            
+         </form>
+
+      </div>
+   </div>
+   
+   <footer id="pieDePagina">
+      <div class="container">
+         <p id="temperatura"></p>
+         <div class="icons">
+            <div class="icon">
+               <svg heigth="80" width="80">
+                  <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+               </svg>
+               <i class='bx bxl-instagram'></i>
+            </div>
+            <div class="icon">
+               <svg heigth="80" width="80">
+                  <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+               </svg>
+               <i class='bx bxl-facebook-circle'></i>
+            </div>
+            <div class="icon">
+               <svg heigth="80" width="80">
+                  <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+               </svg>
+               <i class='bx bxl-whatsapp'></i>
+            </div>
+      
+            <div class="icon">
+               <svg heigth="80" width="80">
+                  <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+               </svg>
+               <i class='bx bxl-twitter'></i>
+            </div>
+         </div>
+         <p>&copy; Patitas Felices</p>
+      </div>
+   </footer>
+    
+</body>
+</html>  

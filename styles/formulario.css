@@ -1,0 +1,162 @@
+
+   header {
+     width: 100%;
+     height: 300px;
+     overflow:hidden;
+     background:rgb(188, 224, 240) ;
+     margin-bottom: 20px;
+   }
+   
+   .header.conteiner{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   
+   .logo{
+     display: flexbox;
+     flex-direction: column;
+     align-items: right;
+     size: 50px;
+     width: auto;
+     margin: 0%;
+   }
+   
+   header nav{
+     float: center;
+     line-height: 50px;
+   }
+   
+   header nav a{
+     display: inline-block;
+     color: rgb(72, 92, 142);
+     text-decoration: none;
+     padding: 10px 10px;
+     line-height: normal;
+     font-size: 20px;
+     font-weight: bold;
+     -webkit-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+   }
+   
+   header a:hover{
+     background: white;
+     border-radius: 50px;
+   }
+   
+   #logo:hover{
+     background: rgb(255, 255, 255);
+     border-radius: 500px;
+     padding: 80px 10px 0px 10px !important;
+     padding-bottom: 0%;
+   }
+   
+   
+   nav ul{
+   list-style: none;
+   }
+   
+    li{
+     float: left;
+     font-size: 20px;
+     font-weight: 700;
+     text-align: left;
+     padding: 15px;
+   }
+   
+   .conteiner{
+     padding-left: 0% ;
+     padding-right: 0%;
+   }
+   
+   
+   .banner img{
+     height: 99vh;
+     padding:0%;
+     width: 100%;
+   }
+   
+   .titulo h1{
+     height: 100px;
+     background: none;
+     color: rgb(95, 111, 148) ;
+     margin-top: 0%;
+     margin-bottom: 0%;
+     font-family: 'Fredoka One', cursive;  
+     font-size: 70px;
+   }
+   
+   h1{  
+     height: 650px;
+     width: 100%;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+       font-size: 100px;
+       margin-top: -655px;
+       margin-bottom: 0%;
+       color:  rgb(255, 255, 255) ; 
+       background-color:rgba(95, 111, 148, 0.4);
+       font-family: Quicksand, sans-serif;
+      
+      }
+  
+   
+   
+   .formulario.de.contacto form{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     
+   }
+   .formulario.de.contacto{
+   position: relative;
+   margin-top: 0%;
+   margin-left: 0%;
+   padding: 100px 50px 50px 80px;
+   width: 100%;
+   background-color: rgba(204, 237, 251, 0.6)!important;
+   opacity: 0.9;
+   }
+   
+   .formulario.de.contacto form button,
+   .formulario.de.contacto form textarea,
+   .formulario.de.contacto form input{
+     border: none;
+     background: none;
+     border-bottom: 2px solid rgb(37, 49, 109);
+     width: 95%;
+     padding: 7px; 
+   }
+   
+   .formulario.de.contacto form button{
+     color: white;
+     background-color:rgb(37, 49, 109) ;
+     padding: px;
+     font-weight: 5px;
+     font-size: 20px;
+     border-bottom: 1px;
+     box-shadow: 2px 2px 10px;
+     
+   }
+   
+   .formulario.de.contacto form .block{
+       grid-column: 1 / 3;
+   }
+     
+   .formulario.de.contacto form input[type=radio]{
+   display: inline-block;
+   width: 30px;
+   }
+   
+   .formulario.de.contacto form input[type=text]{
+     padding-left: 5px;
+   }
+   
+   .animate__bounceInUp{
+    position: absolute;
+    margin-top: -24%;
+   }

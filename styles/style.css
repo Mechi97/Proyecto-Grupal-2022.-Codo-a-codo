@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-image: url(../assets/Patitas-Fondo-Traslucido.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body,main,header,footer{
+    margin: 0%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+h1{font-size:3.5em ;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color:indigo;
+}
+
+button:hover{
+    background-color:darkturquoise;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    overflow:hidden;
+    background:none ;
+    margin-bottom: 20px;
+}
+
+header .logo{
+    float: left;
+    margin: 3px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav{
+    float: right;
+}
+
+header nav a{
+    display: inline-block;
+    color:indigo;
+    text-decoration: none;
+    padding: 10px 10px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    background: darkturquoise;
+    border-radius: 50px;
+}
+
+.header.conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+     display: flexbox;
+     flex-direction: column;
+     align-items: right;
+     size: 50px;
+     width: auto;
+     margin: 0%;
+   }
+   
+   header nav{
+     float: center;
+     line-height: 50px;
+   }
+   
+   header nav a{
+     display: inline-block;
+     color: rgb(72, 92, 142);
+     text-decoration: none;
+     padding: 10px 10px;
+     line-height: normal;
+     font-size: 20px;
+     font-weight: bold;
+     -webkit-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+   }
+   
+   header a:hover{
+     background: white;
+     border-radius: 50px;
+   }
+   
+   #logo:hover{
+     background: rgb(255, 255, 255);
+     border-radius: 500px;
+     padding: 80px 10px 0px 10px !important;
+     padding-bottom: 0%;
+   }
+   
+   
+   nav ul{
+   list-style: none;
+   }
+   
+    li{
+     float: left;
+     font-size: 20px;
+     font-weight: 700;
+     text-align: left;
+     padding: 15px;
+   }
+   
+   .conteiner{
+     padding-left: 0% ;
+     padding-right: 0%;
+   }
+   
+   
+   .banner img{
+     height: 99vh;
+     position: relative;
+     padding:0%;
+     width: 100%;
+   }
+   
+   .titulo h1{
+     height: 100px;
+     background: none;
+     color: rgb(95, 111, 148) ;
+     margin-top: 0%;
+     margin-bottom: 0%;
+     font-family: 'Fredoka One', cursive;  
+     font-size: 70px;
+   }
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column ;
+    height: 99vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("../assets/mascotas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#noticias{
+    color: white;
+    text-align: center;
+}
+
+#noticias .container{
+    padding: 5% 12px;
+}
+
+#noticias h2{
+    margin-top: 0;
+}
+
+#noticias p{
+    display: none;
+}
+
+#noticias .notas{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.notas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img2.jpg");   
+}
+
+.notas:nth-child(2){
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img1.jpg");
+}
+
+footer{
+    background: rgb(95, 111, 148);
+    padding-top: 16px;
+    
+}
+
+footer div{
+    margin: 0;
+    padding: 12px;
+}
+
+footer .container{
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer#pieDePagina p {
+    color: white;
+    margin-left: 20px;
+}
+
+.icons .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icons .icon svg{
+    margin-left: -11px;
+    margin-top: -11px;
+    margin-top: -11px;
+}
+
+.icons .icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icons .icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icons .icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icons .icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icons .icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+.icons{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    margin-bottom: -13px;
+}
+
+.obligatorio{
+    color: red;
+}
+
+
+/*MENU*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: rgb(95, 111, 148);
+overflow: hidden;
+margin-top: 16px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav a:hover {
+        border-radius: inherit;
+    }
+}
+
+/*NOTAS*/
+#noticias{
+    background: #ccc;
+}
+
+.linea{
+    background-color: rgba(106, 106, 255, 0.486);
+    height: 5px;
+    width: 100%;
+    position: center center;
+    
+}
+.nota{
+    position: center center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    margin: auto;
+    grid-gap: 15px;
+    padding: 0 0px;
+    overflow: hidden;
+}
+
+.nota img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;}
+.box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.245);
+    transition: transform .3s ease;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.equis{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: rgb(255, 0, 0) ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    font-style:unset;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+
+}
+.box img{
+    width: 40vw;
+    max-height: 95vh;
+}
+.box:target{
+    transform: scale(1);
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TIPOGRAFIAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <title>Patitas Felices</title>
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header conteiner">
+    
+            <div class="logo"> <a id="logo" href="index.html"><img src="assets/logo.png" width="100px" alt=""></a></div>
+    
+            <div class="titulo">
+                <h1>Fundación Patitas</h1>
+            </div>
+    
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="quienessomos.html">Quienes Somos</a>
+            <a href="galeria.html">Nuestros Animalitos</a>
+            <a href="formulario.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <section id="hero">
+        <h1>Da amor como ellos lo hacen</h1>
+        <a href="galeria.html"><button>Adopta</button></a>
+    </section>
+    <section id="noticias">
+        <div class="container">
+            <h1>Notas periodisticas</h1>
+            <span class="linea"></span>
+            <a href="#nota1"><img src="assets/noticias1.jpg" alt="" width="600px" height="800px"></a>
+            <a href="#nota2"><img src="assets/noticia2.jpg" alt="" width="600px" height="800px"></a>
+            <a href="#nota3"><img src="assets/noticia3.jpg" alt=""></a>
+            <article class="box" id="nota1">
+                <img src="assets/noticias1.jpg" alt="">
+                <a href="#" class="equis">X</a>
+            </article>
+            <article class="box" id="nota2">
+                <img src="assets/noticia2.jpg" alt="">
+                <a href="#" class="equis">X</a>
+            </article>
+            <article class="box" id="nota3">
+                <img src="assets/noticia3.jpg" alt="">
+                <a href="#" class="equis">X</a>
+            </article>
+        </div>
+    </section>
+    <section id="mapa">
+        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Patitas%20Felices)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/car-satnav-gps/">GPS devices</a></iframe></div>
+    </section>
+
+    <footer id="pieDePagina">
+        <div class="container">
+            <p id="temperatura"></p>
+            <div class="icons">
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-whatsapp'></i>
+                </div>
+    
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+            </div>
+            <p>&copy; Patitas Felices</p>
+        </div>
+    </footer>
+</body>
+
+</html>
